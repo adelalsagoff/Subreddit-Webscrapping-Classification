@@ -1,12 +1,4 @@
-# Subreddit-Webscrapping-Project
-
 # Subreddit Post Classification (Google Home vs Amazon Echo)
-
-<br>
-Adel Alsagoff<br>
-General Assembly<br>
-April 22, 2021<br>
-
 
 ## Problem Statement<br>
 
@@ -182,10 +174,10 @@ As expected, the algorithm had performed worse with text data without key words,
 |             	| with keywords 	| without keywords 	| without keywords and additional features 	|
 |-------------	|---------------	|------------------	|------------------------------------------	|
 |             	| Random Forest 	| Random Forest    	| Random Forest                            	|
-| train score 	| 0.9965        	| 0.9988           	| 1.0|
-| test score  	| 0.9024        	| 0.8068           	| 0.9986                                   	|
+| train score 	| 0.9965        	| 0.9988           	| 0.9988|
+| test score  	| 0.9024        	| 0.8068           	| 0.8242                                  	|
 
-Our Random Forest Model, with the same parameters ie. 150 trees, performed significantly better with almost a perfect score.
+Our Random Forest Model, with the same parameters ie. 150 trees, performed significantly better with a higher score.
 
 What can be concluded is that the features added into our model was extremely useful in the classification of the post to the right subreddits.
 
@@ -195,7 +187,7 @@ Stemming our text data had resulted in better accuracy score across our Naive Ba
 
 Our Random Forest model had also performed better than Naive Bayes overall. A possible reason would be the conditions the Naive Bayes model requires for it to work well. Naive Bayes works best when you have small training data set and relatively small features(dimensions). Since we have very high dimensionality, the model may not give you accuracy, because the likelihood would be distributed and may not follow the Gaussian or other distribution. Another condition for Naive Bayes to work is that features should be dependent of each other and with text data, there is a likelihood that certain words are dependent of each other, for example bigrams or trigrams. 
 
-Lastly, our Random Forest performed better with additional features, to the point wher even in our test score, we were close to perfect predictions. This is representative of how with more data, lowers estimation variance.
+Lastly, our Random Forest performed better with additional features, this is representative of how with more data, lowers estimation variance.
 
 ## Conclusion
 
